@@ -7,7 +7,7 @@ let quotes = ['A little smash and grab.', 'Come on! Resist arrest already!', 'Vi
 'Fight me!', 'Enlightenment is mine!', 'Orbs light my path.',
 'I\'ll take that soul if you\'re not using it.', 'Come along, little soul.', 'Another soul? Don\'t mind if I do', 
 'The King has arrived.', 'Equal of Heaven, greater than gods.', 'Oh, there\'ll be stories about this fight.',
-'squirtle, squirtle.', 'char, charmander.', 'Bulbasaur!'];
+'squirtle, squirtle!', 'char, charmander!', 'Bulbasaur!'];
 
 
 const randIndex = (arr) => {
@@ -19,5 +19,7 @@ const createMessage = (arr1, arr2, arr3) => {
     let randIndex2 = randIndex(arr2);
     let randIndex3 = randIndex(arr3);
 
-    console.log(`In the words of the great ${arr2[randINdex2]} from the ${arr1[randIndex1]} universe, ${arr3[randIndex3]}`)
+    console.log(`In the words of the great ${arr2[randIndex2]} from the ${arr1[randIndex1]} universe, ${arr3[randIndex3]}`)
 }
+
+createMessage(games, characters, quotes);
